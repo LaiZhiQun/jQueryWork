@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="jQueryHomeWork">
+    <meta name="author" content="LaiLai">
+    <meta name="keywords" content="jQuery">
+    <meta name="copyright" content="六角學院">
+    <link rel="icon" href="/images/jQuery-b.png">
     <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/all.js"></script>
 </head>
@@ -72,15 +77,21 @@
 
         <ul class="course">
             <li class="item">
-                <a href="images/html-b.png" data-lightbox="image-1" data-title="HTML 5 基礎教學"><img src="images/html.png" alt="html"></a>
+                <div class="item-img">
+                    <a href="images/html-b.png" data-lightbox="image-1" data-title="HTML 5 基礎教學"><img src="images/html.png" alt="html"></a>
+                </div>
+                
                 <h3>HTML 5 基礎教學</h3>
                 <p>主流前端網站設計的基礎就在六腳學院，在這裡不再是填鴨式教學，
                         而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，
                         讓學員學習業界主流的開發方法。</p>
             </li>
             <li class="item">
-                <a href="images/rwd-b.png" data-lightbox="image-1" data-title="響應式網站設計"><img src="images/rwd.png" alt="rwd" style="margin-top: 30px;"></a>
-                <h3 style="margin-top: 30px;">響應式網站設計</h3>
+                <div class="item-img">
+                    <a href="images/rwd-b.png" data-lightbox="image-1" data-title="響應式網站設計"><img src="images/rwd.png" alt="rwd"></a>
+                </div>
+                
+                <h3>響應式網站設計</h3>
                 <p>響應式網站設計(Responsive web design)，
                     目前大多使用者均是以手機瀏覽的情況下，
                     響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，
@@ -88,7 +99,10 @@
                 </p>
             </li>
             <li class="item">
-                <a href="/images/jQuery-b.png" data-lightbox="image-1" data-title="jQuery 實戰教學"><img src="images/jQuery.png" alt="jq" style="margin-top: 20px;"></a>
+                <div class="item-img">
+                    <a href="/images/jQuery-b.png" data-lightbox="image-1" data-title="jQuery 實戰教學"><img src="images/jQuery.png" alt="jq"></a>
+                </div>
+                
                 <h3>jQuery 實戰教學</h3>
                 <ul>本課程有以下特色
                     <li>瞭解變數的使用方法</li>
@@ -108,61 +122,62 @@
             </tr>
             <tr>
                 <td>費用</td>
-                <td><font color="#49b99d">較低</font></td>
-                <td><font color="#49b99d">較低</font></td>
+                <td class="especially">較低</td>
+                <td class="especially">較低</td>
                 <td>較高</td>
             </tr>
             <tr>
                 <td>學習效果</td>
                 <td>一般</td>
-                <td><font color="#49b99d">較低</font></td>
-                <td><font color="#49b99d">很好</font></td>
+                <td class="especially">較低</td>
+                <td class="especially">很好</td>
             </tr>
             <tr>
                 <td>Code review</td>
-                <td><font color="#49b99d">有</font></td>
+                <td class="especially">有</td>
                 <td>無</td>
                 <td>不一定</td>
             </tr>
             <tr>
                 <td>課程更新進度</td>
-                <td><font color="#49b99d">普通</font></td>
-                <td><font color="#49b99d">普通</font></td>
+                <td class="especially">普通</td>
+                <td class="especially">普通</td>
                 <td>較慢</td>
             </tr>
             <tr>
                 <td>多次複習</td>
-                <td><font color="#49b99d">可</font></td>
+                <td class="especially">可</td>
                 <td>可</td>
                 <td>不可</td>
             </tr>
             <tr>
                 <td>字幕</td>
-                <td><font color="#49b99d">有</font></td>
+                <td class="especially">有</td>
                 <td>不一定</td>
                 <td>板書</td>
             </tr>
         </table>
         <div class="info">
-            <p>
+            <h2>
                 對我們課程有興趣嗎?<br>
                 歡迎留下您的資料
-            </p>
+            </h2>
             <div class="info-info">
-                
-                <div class="blank">
-
-                </div>
                 <form action="#">
-                    <label for="username">姓名</label>
-                    <input id="username" type="text" name="username" placeholder="請輸入姓名">
-                    
-                    <label for="tel">電話</label>
-                    <input id="tel" type="tel" name="tel" placeholder="請輸入連絡電話">
-
-                    <label for="email">信箱</label>
-                    <input id="email" type="email" name="email" placeholder="請輸入電子信箱">
-                    <input type="submit" value="送出">
+                    <div class="textarea">
+                        <textarea name="fortext" id="fortext" cols="57" rows="13"></textarea>
+                    </div>
+                    <div class="info-text">
+                        <label for="username">姓名</label>
+                        <input id="username" type="text" name="username" placeholder="請輸入姓名">
+                        
+                        <label for="tel">電話</label>
+                        <input id="tel" type="tel" name="tel" placeholder="請輸入連絡電話">
+    
+                        <label for="email">信箱</label>
+                        <input id="email" type="email" name="email" placeholder="請輸入電子信箱">
+                        <input type="submit" value="送出">
+                    </div>
                 </form>
             </div>
         </div>
@@ -173,15 +188,15 @@
             
             <ul class="contact">
                 <li>
-                    <a href="tel:0999123456">聯絡我們：<font color="#F00078">hexschool@gamil.com</font></a> 
+                    聯絡我們：<a href="HexSchool@gmail.com"><span>hexschool@gmail.com</span></a>
                 </li>
                 <li>
-                    <a href="mailto:HexSchool@gmail.com">電話：<font color="#F00078">0999123456</font></a>
+                    電話：<a href="tel:0999123456"><span>0999123456</span></a>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="top">
+    <div class="top" id="gotop">
         <a href="#"><img src="images/up.png" alt="up"></a>
     </div>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>

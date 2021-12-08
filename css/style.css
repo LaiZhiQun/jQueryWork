@@ -22,6 +22,10 @@
 }
 .fb{
     color: rgb(16, 16, 194);
+    font-weight: bold;
+}
+.header a .fb:hover{
+    color: rgb(75, 163, 141);
 }
 .tw{
     border-left: 1px solid rgb(196, 196, 196);
@@ -29,6 +33,10 @@
 }
 .tw-follow{
     color: #12AFED;
+    font-weight: bold;
+}
+.header a .tw-follow:hover{
+    color: rgb(105, 13, 13);
 }
 
 /*nav*/
@@ -133,38 +141,35 @@ body {
 .course{
     display: flex;
     justify-content: space-around;
+    margin-top: 60px;
 }
 .course .item{
-    display: flex;
-    flex-direction: column;
     width: 300px;
-    margin-top: 60px;
     padding-bottom: 20px;
     border-left: 1px solid rgb(226, 225, 225);
     border-right: 1px solid rgb(226, 225, 225);
     border-bottom: 1px solid rgb(226, 225, 225);
     box-shadow: 0px 2px 1px rgb(196, 196, 196);
+    padding: 10px 30px;
 }
-.course img{
-    display: block;
-    margin: auto;
-    padding-top: 20px;
+.item-img{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .course .item h3{
     text-align: center;
     font-weight: bold;
     font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin: 10px 0px 5px 0px;
 }
 .course p{
     line-height: 1.5;
     text-align: justify;
-    padding: 0px 10px;
 }
 .course ul{
     line-height: 1.5;
-    justify-content: space-evenly;
     padding-left: 20px;
 }
 .course ul li{
@@ -174,29 +179,26 @@ body {
 }
 
 /*table*/
-
+.especially{
+    color: #49b99d;
+}
 h4{
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin: 50px 0px 30px 0px;
 }
 table .title{
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(168, 158, 158);
 }
 th{
     text-align: start;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 20px;
     border-bottom: 1px solid rgb(236, 236, 236);
     border-top: 1px solid rgb(197, 196, 196);
 }
 td{
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 20px;
     border-top: 1px solid rgb(197, 196, 196);
 }
 table{
@@ -211,34 +213,29 @@ table{
     background-image: url(/images/bg.png);
     margin-top: 50px;
 }
-.info p{
+.info h2{
     text-align: center;
     font-size: 24px;
     padding-top: 30px;
     color: white;
     line-height: 1.5;
 }
-.blank{
-    width: 460px;
-    height: 200px;
-    background-color: #fff;
-    margin-left: 20px;
-    border-radius: 2%;
-}
 .info-info{
-    display: flex;
     margin-top: 20px;
 }
 form{
     margin-left: 35px;
+    display: flex;
 }
 label{
     color: white;
 }
+.info-text{
+    margin-left: 30px;
+}
 input{
     display: block;
-    margin-bottom: 10px;
-    margin-top: 5px;
+    margin: 5px 0px 10px 0px;
     border-radius: 2px;
     width: 450px;
     box-shadow: 0px 0px 0px #48DAB6;
@@ -253,7 +250,11 @@ input[type="submit"]{
     border: 1px solid #48DAB6;
     color: #fff;
 }
-
+input[type="submit"]:hover{
+    color: #48DAB6;
+    background-color: #fff;
+    cursor: pointer
+}
 /*footer*/
 
 .footer{
@@ -267,7 +268,12 @@ input[type="submit"]{
 .contact li a{
     color: black;
 }
-
+.contact li a span:hover{
+    color: rgb(218, 101, 101);
+}
+.contact li a span{
+    color: red;
+}
 .top img{
     width: 50px;
     height: 50px;

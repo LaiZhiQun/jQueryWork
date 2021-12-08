@@ -8,7 +8,15 @@ $(document).ready(function () {
     });
     $('.top a').click(function (e) { 
         e.preventDefault();
-        $('html, body').animate({scrollTop:0},1000);
-    });    
+        $('html, body').animate({scrollTop:0},500);
+    });
+    function showBtnCondition() {
+        if ($(this).scrollTop() > 300) {
+          $('#gotop').fadeIn();
+            } else {
+             $('#gotop').fadeOut();
+           }
+         }
+     $(window).scroll(showBtnCondition);    
 });
 
